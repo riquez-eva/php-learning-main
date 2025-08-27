@@ -1,0 +1,25 @@
+{
+    "name": "afpa/php-learning",
+    "description": "Projet d'entraînement à l'implémentation d'algorithmes en PHP",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^12"
+    },
+    "license": "Attribution-NonCommercial-ShareAlike 4.0 International",
+    "autoload": {
+        "psr-4": {
+            "Afpa\\PhpLearning\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ludovic Esperce",
+            "email": "ludovic.esperce@afpa.fr"
+        }
+    ]
+}
