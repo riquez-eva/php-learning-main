@@ -19,9 +19,6 @@ class LoopExercises
      */
     public static function sumUpTo(int $n): int
     {
-        // TODO compléter la fonction avec une boucle for ou while
-
-
         if ($n >= 0) {
             $somme = 0;
             for ($i = 1; $i <= $n; $i++) {
@@ -114,8 +111,6 @@ class LoopExercises
      */
     public static function factorial(int $n): int
     {
-        // TODO : Utiliser une boucle for pour calculer la factorielle
-
         $factor = 1;
         for ($i = 1; $i <= $n; $i++) {
             $factor *= $i;
