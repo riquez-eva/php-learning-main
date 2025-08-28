@@ -9,9 +9,9 @@ class ArrayExercisesTest extends TestCase
 
     public function testSumAllElements()
     {
-        $this->assertEquals(0, []);
-        $this->assertEquals(25, [25]);
-        $this->assertEquals(25, [5, 5, 5, 5, 5]);
+        $this->assertEquals(25, ArrayExercises::sumAllElements([5, 5, 5, 5, 5]));
+        $this->assertEquals(25, ArrayExercises::sumAllElements([25]));
+        $this->assertEquals(0, ArrayExercises::sumAllElements([]));
     }
 
     public function testSumBetweenIndexes()
@@ -61,9 +61,9 @@ class ArrayExercisesTest extends TestCase
 
     public function testCompareArray()
     {
+        $this->assertFalse(ArrayExercises::compareArray([1, 2, 3], [3, 2, 1]));
         $this->assertTrue(ArrayExercises::compareArray([1, 2, 3], [1, 2, 3]));
         $this->assertFalse(ArrayExercises::compareArray([1, 2], [1, 2, 3]));
-        $this->assertFalse(ArrayExercises::compareArray([1, 2, 3], [3, 2, 1]));
     }
 
     public function testReverseArray()

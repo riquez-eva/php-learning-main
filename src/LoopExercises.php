@@ -133,11 +133,12 @@ class LoopExercises
     {
         // variable qui contiendra le résultat
         $sum = 0;
-        $chiffre = $n % 10;
+        $nombre = $n;
 
-        while ($chiffre < $n) {
-            
-            $sum += $chiffre;
+        while ($nombre != 0) {
+            $chiffre = $nombre % 10;
+            $sum += $chiffre ; 
+            $nombre = $nombre / 10;
         }
         return $sum;
 
