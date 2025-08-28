@@ -139,9 +139,17 @@ class ArrayExercises
     {
         // Indice : déclarer ici un nouveau tableau
 
-        // TODO trouver une façon de faire une boucle pour passer en revue les éléments comme souhaité
+        // pour stocker les valeurs en miroir
+        $finalArray = [];
+        // Pour savoir combien il y a d'éléments dans le tableau
+        $lengthArray = count($toReverse);
 
-        return [];
+        // TODO trouver une façon de faire une boucle pour passer en revue les éléments comme souhaité
+        for ($i = $lengthArray; $i >= 0; --$i) {
+        $toReverse = ;
+        }
+
+        return $finalArray;
     }
 
     /**
